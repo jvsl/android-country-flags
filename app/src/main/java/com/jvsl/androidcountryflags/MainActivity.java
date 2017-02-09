@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageView flag = (ImageView) findViewById(R.id.flag);
-        flag.setImageResource(R.drawable.afghanistan);
+        ImageView bigFlag = (ImageView) findViewById(R.id.big_flag);
+        flag.setImageResource(new Flag().getFlagByCountryCode(this, "br"));
+        bigFlag.setImageResource(new Flag().getFlagByCountryCode(this, "ar"));
     }
 }
