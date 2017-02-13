@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android Country Flags</string>
+    <string name="flag_label">Tip the country code:</string>
+    <string name="flag">Flag</string>
 </resources>
